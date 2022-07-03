@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.acgcp_card {
+	padding: 25px;
+	background: #F2F2F2;
+	border-radius: 5px;
+	width: 450px;
+}	
+
+.acgcp_card .acgcp_selectForCodeGenerate {
+	margin-top: 10px;
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
+	outline: none;
+	font-size: 16px;
+	
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .8rem center;
+    background-size: 1em;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.acgcp_card .acgcp_enableClass {
+	padding: 8px;
+	border: none;
+	text-transform: uppercase;
+	background: #ec4e00;
+	color: #fff;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.acgcp_card .acgcp_enableClass:hover {
+	opacity: .8;
+}
+
+.acgcp_card .acgcp_disabledClass {
+	padding: 8px;
+	border: 1px dotted #ec4e00;
+	text-transform: uppercase;
+	color: #ec4e00;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 20px;
+	width: 100%;
+	cursor: default;
+	font-size: 16px;
+}
+
+
+.acgcp_card .acgcp_form-group {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.acgcp_card .acgcp_form-group .acgcp_redeemCode {
+	width: 90%;
+	padding: 8px;
+	border-radius: 5px 0 0 5px;
+	font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
+	outline: none;
+	border: 1px solid #ec4e00;
+	font-size: 16px;
+}
+
+.acgcp_card .acgcp_form-group .acgcp_copyCode {
+	width: 10%;
+	padding: 8px;
+	border-radius: 0 5px 5px 0;
+	font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	background: #ec4e00;
+	color: #fff;
+	font-size: 16px;
+}
+
+.acgcp_card .acgcp_linkRedeemNow {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.acgcp_card .acgcp_linkRedeemNow a {
+	font-family: 'Rajdhani', sans-serif;
+	color: #ec4e00;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.acgcp_copyCode {
+  position: relative;
+  display: inline-block;
+}
+
+.acgcp_copyCode .acgcp_tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 140%;
+  left: 150%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.acgcp_copyCode .acgcp_tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+  transform: rotate(90deg);
+}
+
+.acgcp_copyCode:hover .acgcp_tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*for responsive card*/
+@media only screen and (max-width: 425px) {
+
+	.acgcp_card {
+		width: 100%;
+	}
+
+	.acgcp_container {
+		padding: 10px;
+	}
+
+}
